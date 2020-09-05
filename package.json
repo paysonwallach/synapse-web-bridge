@@ -14,8 +14,8 @@
     "object-sizeof": "^1.6.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^10.0.0",
-    "@commitlint/config-conventional": "^10.0.0",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "husky": "^4.2.5",
     "nunjucks": "^3.2.2",
     "standard-version": "^9.0.0",
