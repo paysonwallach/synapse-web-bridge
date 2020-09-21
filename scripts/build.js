@@ -1,14 +1,14 @@
-const fs = require('fs');
-const path = require('path');
-const nunjucks = require('nunjucks');
+const fs = require("fs");
+const path = require("path");
+const nunjucks = require("nunjucks");
 
-const package_config = require(path.join(process.env.INIT_CWD, 'package.json'));
+const package_config = require(path.join(process.env.INIT_CWD, "package.json"));
 
 nunjucks.configure({ autoescape: true });
 
 (async () => {
   try {
-    const template_dir = path.join(process.env.INIT_CWD, 'meta');
+    const template_dir = path.join(process.env.INIT_CWD, "meta");
     const files = await fs.promises.readdir(template_dir);
 
     for (const file of files) {
@@ -16,7 +16,7 @@ nunjucks.configure({ autoescape: true });
 
       await fs.promises.writeFile(
         path.join(process.env.INIT_CWD, path.parse(file).name),
-        nunjucks.render (file_path, package_config),
+        nunjucks.render(file_path, package_config),
         (err) => {
           if (err) {
             console.log(`error rendering ${file}: ${err}`);
@@ -24,7 +24,7 @@ nunjucks.configure({ autoescape: true });
         }
       );
     }
-  } catch(err) {
+  } catch (err) {
     console.log(err);
   }
 })();
