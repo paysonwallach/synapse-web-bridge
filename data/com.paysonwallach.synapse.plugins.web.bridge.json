@@ -1,0 +1,7 @@
+{
+  "name": "com.paysonwallach.synapse.plugins.web.bridge",
+  "description": "",
+  "path": "@EXECUTABLE_PATH@",
+  "type": "stdio",
+  "allowed_extensions": [ "synapse@paysonwallach.com" ]
+}

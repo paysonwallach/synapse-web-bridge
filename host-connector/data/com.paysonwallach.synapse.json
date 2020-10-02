@@ -1,7 +1,0 @@
-{
-  "name": "com.paysonwallach.synapse",
-  "description": "",
-  "path": "/home/paysonwallach/.mozilla/native-messaging-hosts/com.paysonwallach.synapse",
-  "type": "stdio",
-  "allowed_extensions": [ "synapse@paysonwallach.com" ]
-}

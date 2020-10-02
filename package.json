@@ -1,11 +1,10 @@
 {
-  "name": "synapse-firefox",
-  "description": "Firefox addon for Synapse",
+  "name": "com.paysonwallach.synapse.plugins.web.bridge",
+  "description": "A host application to provide browser integration to Synapse.",
   "license": "GPL-3.0",
   "author": "payson@paysonwallach.com",
   "version": "0.1.0",
   "scripts": {
-    "build": "webpack",
     "format": "run-p format:*",
     "format:js": "prettier --write .",
     "format:package.json": "prettier-package-json --write",
@@ -21,9 +20,7 @@
     "nunjucks": "^3.2.2",
     "prettier": "^2.1.2",
     "prettier-package-json": "^2.1.3",
-    "standard-version": "^9.0.0",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12"
+    "standard-version": "^8.0.0"
   },
   "husky": {
     "hooks": {
