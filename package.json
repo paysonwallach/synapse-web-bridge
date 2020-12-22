@@ -3,6 +3,11 @@
   "description": "A host application to provide browser integration to Synapse.",
   "license": "GPL-3.0",
   "author": "payson@paysonwallach.com",
+  "homepage": "https://github.com/paysonwallach/synapse-web-bridge#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paysonwallach/synapse-web-bridge"
+  },
   "version": "0.1.0",
   "scripts": {
     "format": "run-p format:*",
@@ -26,6 +31,23 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "npm run format"
+    }
+  },
+  "meta": {
+    "title": "Synapse Web Bridge",
+    "repository": {
+      "owner": "paysonwallach",
+      "name": "synapse-web-bridge"
+    },
+    "license": {
+      "name": "GNU General Public License v3.0",
+      "url": "https://github.com/paysonwallach/synapse-web-bridge/blob/master/LICENSE"
+    },
+    "codeOfConduct": {
+      "url": "https://github.com/paysonwallach/synapse-web-bridge/blob/master/CODE_OF_CONDUCT.md"
+    },
+    "releases": {
+      "url": "https://github.com/paysonwallach/synapse-web-bridge/releases"
     }
   },
   "standard-version": {
