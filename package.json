@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "com.paysonwallach.synapse.plugins.web.bridge",
   "description": "A host application to provide browser integration to Synapse.",
   "license": "GPL-3.0",
