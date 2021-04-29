@@ -15,6 +15,12 @@ gio_dep = dependency('gio-2.0')
 gio_unix_dep = dependency('gio-unix-2.0')
 posix_dep = vala.find_library('posix')
 
+add_project_arguments([
+    '-DG_LOG_DOMAIN="@0@"'.format(meson.project_name())
+  ],
+  language:'c'
+)
+
 executable (
   meson.project_name(),
   files(
