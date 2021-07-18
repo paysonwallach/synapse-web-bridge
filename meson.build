@@ -33,7 +33,8 @@ executable (
     gio_unix_dep,
     posix_dep
   ],
-  install: true
+  install: true,
+  install_dir: join_paths(get_option('prefix'), get_option('libexecdir'))
 )
 
 meson.add_install_script(
